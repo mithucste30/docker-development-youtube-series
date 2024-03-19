@@ -5,7 +5,18 @@
 Lets create a Kubernetes cluster to play with using [kind](https://kind.sigs.k8s.io/docs/user/quick-start/)
 
 ```
+for intel/amd64 machine
+
 kind create cluster --name velero --image kindest/node:v1.19.1
+```
+
+```
+for m1 mac/arm64
+
+kind create cluster --name velero --image kindest/node:v1.19.11@sha256:7664f21f9cb6ba2264437de0eb3fe99f201db7a3ac72329547ec4373ba5f5911
+
+details:
+https://github.com/kubernetes-sigs/kind/releases/tag/v0.11.0#contributors
 ```
 
 ## Get a container to work in
